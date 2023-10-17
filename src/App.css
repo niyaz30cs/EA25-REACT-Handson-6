@@ -1,38 +1,174 @@
-.App {
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  background-image: linear-gradient(rgb(150, 184, 248),pink,rgb(249, 233, 249));
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.navbar
+{
+  background-color: darkblue;
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: cursive;
+}
+.removeLine
+{
+  text-decoration: none;
+  color: white;
+}
+.text
+{
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: 4px 4px 3px white;
+}
+.topWork
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.topWork-h1
+{
+  font-size: 45px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 4px 3px 2px white;
+}
+.topWork-btn
+{
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to left,yellow,green,red);
+}
+.topWork-btn:hover
+{
+  background-image: radial-gradient(pink,white,blue);
+  color: black;
+}
+.tableContainer
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.tableHeading
+{
+  background-color: #17202A;
+  font-size: 25px;
+  color: #F1C40F;
+}
+.table
+{
+  width: 1250px;
+  height: 500px;
   text-align: center;
+  font-weight: bold;
+  background-color: white;
+  /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* edit form css */
+.mainForn
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+ 
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.editForm{
+  /* background-color: #F1C40F; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 500px;
+  /* width: 600px; */
+  line-height: 230px;
+  justify-content: space-around;
+  
+  
+}
+.inputBox
+{
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+}
+.twoInput
+{
+  display: flex;
+  gap: 30px;
+}
+.editInput
+{
+  width: 250px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding-left: 10px;
+  background: transparent;
+}
+.editInput:focus
+{
+  background-color: beige;
+}
+.editBtn1
+{
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 15px;
+  background-color:red;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.editBtn1:hover
+{
+  background-color: black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.editBtn2
+{
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 15px;
+  background-color: blue;
+  color: white;
+}
+.editBtn2:hover
+{
+  background-color: rgb(11, 206, 11);
+}
+.label
+{
+  font-size: 20px;
+}
+.middle
+{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 3px 2px 3px red;
 }
